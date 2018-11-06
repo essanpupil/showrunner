@@ -1,18 +1,130 @@
-<html>
-    <head>
-        <title>Show Runner</title>
-    </head>
-    <body>
-        <h1>Show Runner Index</h1>
-        <table border="1">
-            <tr><th>Time</th><th>Location</th><th>Topic</th><th>Speaker</th><th>Status</th></tr>
-            <tr>
-                <td>09:00</td>
-                <td>Room 1</td>
-                <td>Django ORM</td>
-                <td>Edwin</td>
-                <td>On Time</td>
-            </tr>
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Python ID Show Runner</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Container for flexboxes */
+        section {
+            display: -webkit-flex;
+            display: flex;
+        }
+
+        /* Style the navigation menu */
+        nav {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Style the content */
+        article {
+            -webkit-flex: 3;
+            -ms-flex: 3;
+            flex: 3;
+            background-color: #f1f1f1;
+            padding: 10px;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            section {
+                -webkit-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Dashboard</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Schedules</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Issues</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Schedules</h1>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr><th>Time</th><th>Topic</th><th>Speaker</th><th>Status</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>13:00</td>
+                        <td>Django 101</td>
+                        <td>Zaky Akhmad</td>
+                        <td>ON TIME</td>
+                    </tr>
+                    <tr>
+                        <td>13:45</td>
+                        <td>Flask 101</td>
+                        <td>Rezha Julio</td>
+                        <td>ON TIME</td>
+                    </tr>
+                    <tr>
+                        <td>14:30</td>
+                        <td>Python ID Code of Conduct</td>
+                        <td>Farah Clara</td>
+                        <td>ON TIME</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+    <footer>
+        <p>Python ID</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
 </html>
